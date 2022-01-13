@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>to-dolist</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- this is html code for task boxes -->
+   <main>
+       <ul></ul>
+   </main>
+   <!-- this is html code for form bellow where user can input new tasks -->
+    <section>
+            <div class="form">
+                <button class="submit" type="submit">Add</button>
+                <input type="text" placeholder="Add item" id = "text" required maxlength="9">
+                <div class="colours">
+                    <div id="#ed4340" class="colour orange"></div>
+                    <div id="#f48c8a" class="colour pink"></div>
+                    <div id="#084f6e" class="colour purple"></div>
+                    <div id="#6e0840" class="colour blue"></div>
+                    <div id="#ac0c64" class="colour yellow"></div>
+                </div>
+            </div>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src = "./logic.js"></script>
+</body>
+</html>

@@ -1,0 +1,144 @@
+/* here are some basic styles  */
+*,*::after,*::before{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+
+}
+body{
+    background-color: var(--clr-background);
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 300px;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+:root{
+    --clr-background:#e8f4f5;
+    --clr-btn:#10b199;
+    --clr-white:#fff;
+    --first-input:#ed4340;
+    --second-input:#f48c8a;
+    --third-input:#624afc;
+    --orange-box:#f8ae4f;
+    --pink-box:#f84fde;
+    --purple-box:#5c046c;
+    --green-box:#04656c;
+    --yellow-box:#f7e73b;
+    --clr-border:#e3e3d8;
+}
+/* here i style task boxes  */
+ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 30%;
+}
+ul li{
+    border:1px solid var(--clr-white);
+    cursor:pointer;
+    list-style: none;
+}
+.container{
+    border: none;
+    height: 51px;
+    width: 500px;
+    padding-left: 10px;
+    font-size: 16px;
+    margin-right: 20px;
+    margin-left: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+    color:var(--clr-white)
+}
+.text-box{
+    border:none;
+    width:60px;
+    height:20px;
+    cursor:pointer;
+}
+.check{
+    border-right: 2px solid var(--clr-white);
+}
+.user-input{
+    width: 80px;
+    height:30px;
+    text-align: center;
+}
+/* adding button indside input */
+section .form{
+    display: flex;
+    width: 300px;
+    position: absolute;
+    top:400px;
+}
+section input {
+    display: inline-flex;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 7px;
+    border: 1px solid #55555530;
+    background-color: #fff;
+    align-items: center;
+    margin-top: 20px;
+    width: 500px;
+    height: 40px;
+    border-radius: 5px;
+    padding-left:20px;
+}
+
+.submit {
+    position: absolute;
+    width: 70px;
+    margin-top: 23px;
+    margin-right: 5px;
+    margin-left: 180px;
+    border-radius: 5px;
+    z-index: 2;
+    border: none;
+    top: 2px;
+    height: 30px;
+    cursor: pointer;
+    color: var(--clr-white);
+    background-color:var(--clr-btn);
+}
+/*colouring little boxes bellow */
+.colours{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: 10px;
+    left: 90px;
+    width:90%;
+}
+.colours div{
+    width: 10px;
+    height: 10px;
+    margin:3px;
+    cursor:pointer;
+}
+.colours div:nth-child(1){
+    border: 1px  solid var(--clr-border);
+}
+.orange{
+    background-color: var(--orange-box);
+}
+.pink{
+    background-color: var(--pink-box);
+}
+.purple{
+    background-color:var(--purple-box);
+}
+.blue{
+    background-color:var(--green-box);
+}
+.yellow{
+    background-color:var(--yellow-box);
+}
+/* styling placeholder */
+main ::placeholder{
+    color:var(--clr-white);
+}
